@@ -1,66 +1,38 @@
-## **Team Project**: Open Data Source Analysis & Planning
-
-- Eksplorasi sumber data terbuka (Open Data):
-  - Data pemerintah (data.go.id)
-  - Dataset Kaggle
-  - Public APIs (Weather, Transport, etc.)
-  - Open research data
-- Analisis karakteristik dan kualitas data
-- Membuat peta alur data untuk integrasi
-- Dokumentasi requirement dan rencana penggunaan
-- Output: Project blueprint dan documentation
-
-# Open Data Source Analysis & Planning Project
-
-## Project Information
-
-**Project Name**: Jakarta Public Transportation Analytics
-**Created By**: Data Engineering Team Alpha
-**Date**: February 10, 2025
-**Version**: 1.0
+**Project Name**: Project AI Battleship
+**Created By**: Kelompok 5
+**Date**: 6 Maret 2026
 
 ## 1. Executive Summary
 
 ### 1.1 Project Overview
 
-- **Tujuan Project**: Mengembangkan sistem analitik untuk mengoptimasi rute transportasi publik Jakarta menggunakan berbagai sumber open data
-- **Scope Project**: Integrasi data transportasi, cuaca, dan demografi untuk analisis pola pergerakan
-- **Expected Outcomes**: Dashboard analitik real-time dan sistem rekomendasi rute
-- **Timeline**: 3 bulan (Maret - Mei 2025)
+- **Tujuan Project**: Membuat bot AI dalam permainna battleship
+- **Scope Project**: -
+- **Expected Outcomes**: -
+- **Timeline**: -
 
 ### 1.2 Stakeholders
 
-- **Project Owner**: Dinas Perhubungan DKI Jakarta
+- **Project Owner**: Kelompok 5
 - **Team Members**:
-  - Data Engineer: Sarah Wijaya
-  - Data Analyst: Budi Prakoso
-  - Project Manager: Amanda Sari
-- **End Users**:
-  - Dinas Perhubungan
-  - Operator Transportasi
-  - Masyarakat umum
+  - Data Engineer: Adam Noverian
+  - Data Analyst: Ghofur Akbar M
+  - Project Manager: Alfiansyah Wahyu Pratama
 
 ## 2. Data Source Analysis
 
-### 2.1 Data Pemerintah (data.go.id)
+### 2.1 Data Game Moves
 
 #### Source Details
 
-- **Dataset Name**: Statistik Transportasi DKI Jakarta 2024
-- **URL/Access Point**: data.go.id/dataset/statistik-transportasi-dki-2024
-- **Data Owner**: Dinas Perhubungan DKI Jakarta
-- **Update Frequency**: Monthly
+- **Dataset Name**: Battleship Game Moves
+- **URL/Access Point**: https://github.com/cliambrown/battleship-data/blob/main/battleship_game_moves.csv
+- **Data Owner**: https://github.com/cliambrown/battleship-data
 
 #### Data Analysis
 
 - **Format Data**: CSV, Excel
-- **Volume Data**: 500MB
-- **Time Coverage**: Januari 2024 - Desember 2024
-- **Data Quality**:
-  - Completeness: 95% (beberapa data kosong untuk hari libur)
-  - Accuracy: High (verified by Dishub)
-  - Consistency: Good (format standar)
-  - Timeliness: Updates within 5 days of month end
+- **Volume Data**: 27.9 KB
 
 ### 2.2 Dataset Kaggle
 
