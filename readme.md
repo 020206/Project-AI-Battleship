@@ -7,8 +7,16 @@
 ### 1.1 Project Overview
 
 - **Tujuan Project**: Membuat bot AI dalam permainna battleship
-- **Scope Project**: -
-- **Expected Outcomes**: -
+- **Scope Project**:
+- Analisis dataset Battleship (Moves, Squares, Games)
+- Data preprocessing dan profiling
+- Penggabungan dataset
+- Transformasi data untuk kebutuhan analitik
+- Evaluasi performa AI 
+- **Expected Outcomes**:
+- Dataset terintegrasi hasil merge
+- Insight performa AI (win rate, jumlah langkah, dll)
+- Struktur data yang siap digunakan untuk pengembangan AI
 - **Timeline**: -
 
 ### 1.2 Stakeholders
