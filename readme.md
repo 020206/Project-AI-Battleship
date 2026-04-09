@@ -52,7 +52,7 @@
 - **Deskripsi**:
   Dataset berisi log permainan Battleship dengan berbagai informasi seperti mode AI,      hasil permainan, jumlah langkah, dan posisi kapal.
 
-### 3. Data Understanding & Struktur Data
+## 3. Data Understanding & Struktur Data
 
 ### 3.1 Struktur Dataset
 
@@ -95,7 +95,7 @@
 - **square**:
   - Posisi papan (1-100)
 
-#### 4. Data Profiling 
+## 4. Data Profiling 
 
 ### Analisis statistik sederhana:
 
@@ -108,7 +108,7 @@
 - Squares memiliki 100 posisi grid
 - Games memiliki hampir 60 ribu data permainan
 
-#### 5. Data Integration & Struktur Data
+## 5. Data Integration & Struktur Data
 
 ### 5.1 Relasi Data
 
