@@ -42,21 +42,7 @@
 - **URL/Access Point**: https://github.com/cliambrown/battleship-data/blob/main/battleship_game_moves.csv
 - **Data Owner**: https://github.com/cliambrown/battleship-data
 
-#### Data Analysis
-
-- **Format Data**: CSV, Excel
-- **Volume Data**: 27.9 KB
-
-### 2.2 Dataset Kaggle
-
-#### Source Details
-
-- **Dataset Name**: Jakarta Public Transport Usage Patterns
-- **URL/Access Point**: kaggle.com/datasets/jakarta-transport-2024
-- **Creator/Publisher**: Jakarta Data Community
-- **Last Update**: January 15, 2025
-
-#### Data Analysis
+### Data Analys
 
 - **Format Data**: CSV 
 - **Dataset**:
@@ -65,23 +51,49 @@
   - battleship_games.csv → 59710 baris, 6 kolom
 - **Deskripsi**:
   Dataset berisi log permainan Battleship dengan berbagai informasi seperti mode AI,      hasil permainan, jumlah langkah, dan posisi kapal.
-  
-### 2.3 Public APIs
 
-#### Source Details
+### 3. Data Understanding & Struktur Data
 
-- **API Name**: OpenWeather API
-- **Endpoint URL**: api.openweathermap.org/data/3.0/
-- **Provider**: OpenWeather
-- **Authentication Method**: API Key
+### 3.1 Struktur Dataset
 
-#### API Analysis
+- **Moves**:
+  - id
+  - ai_mode_id
+  - autoplay
+  - ai_win
+  - moves
+  - games  
+- **Squares**:
+  - id
+  - ai_mode_id
+  - autoplay
+  - ai_win
+  - ai_ships
+  - square
+  - games
+- **Games**:
+  - id
+  - timestampUTC
+  - ai_win
+  - moves
+  - autoplay
+  - ai_mode_id
 
-- **Response Format**: JSON
-- **Rate Limits**: 60 calls/minute
-- **Reliability**: 99.9% uptime
-- **Documentation Quality**: Comprehensive
-- **Cost**: Free tier sufficient for project needs
+
+#### 3.2 Penjelasan Field Penting
+
+- **ai_mode_id**:
+  - 1 = random
+  - 2 = probability
+  - 3 = learning
+- **autoplay**:
+  - 0 = manual
+  - 1 = otomatis
+- **ai_win**:
+  - 0 = player menang
+  - 1 = AI menang
+- **square**:
+  - Posisi papan (1-100)
 
 ### 2.4 Open Research Data
 
