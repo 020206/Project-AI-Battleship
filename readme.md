@@ -95,21 +95,52 @@
 - **square**:
   - Posisi papan (1-100)
 
-### 2.4 Open Research Data
+#### 4. Data Profiling 
 
-#### Source Details
+### Analisis statistik sederhana:
 
-- **Dataset Name**: Jakarta Urban Mobility Study 2024
-- **Repository**: Harvard Dataverse
-- **Research Institution**: Institut Teknologi Bandung
-- **Publication Date**: December 2024
+- Tidak terdapat missing value (null = 0)
+- Semua data bertipe integer
+- Data bersih dan konsisten
+### Contoh Insight
 
-#### Data Analysis
+- Moves memiliki hingga 84 variasi langkah
+- Squares memiliki 100 posisi grid
+- Games memiliki hampir 60 ribu data permainan
 
-- **Format & Structure**: CSV + GeoJSON
-- **Data Volume**: 1.5GB
-- **Data Quality**: Peer-reviewed
-- **Citation Requirements**: CC BY-NC-SA 4.0
+#### 5. Data Integration & Struktur Data
+
+### 5.1 Relasi Data
+
+**Dataset dihubungkan melalui:**
+- id
+- ai_mode_id
+
+### 5.2 Klasifikasi Kolom
+**Key/Relasi**
+ - id
+ - ai_mode_id
+**Numerik**
+ - Moves
+ - games
+ - square
+ - timestampUTC
+**Turunan/Tambahan**
+ - ai_win
+ - autoplay
+ - ai_ships
+### Data Transformation
+**Beberapa proses transformasi yang dilakukan:**
+ - Standarisasi ai_mode_id
+ - Validasi Boolean
+ - Merge Dataset
+ - Konversi Timestamp
+ - Feature Engineering:
+   - Win Rate AI
+   - Rata-rata langkah
+   - Frekuensi posisi kapal
+
+
 
 ## 3. Data Flow Mapping
 
