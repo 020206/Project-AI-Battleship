@@ -140,11 +140,17 @@
    - Rata-rata langkah
    - Frekuensi posisi kapal
 
+## 7. Validasi Data
+### Hasil Validasi:
+ - Struktur data sesuai
+ - Tidak ada missing value
+ - Tidak ada duplikasi pada primary key
+ - Nilai boolean konsisten
+ - Tipe data seragam (integer)
 
+## 3. Data Flow & Arsitektur
 
-## 3. Data Flow Mapping
-
-### 3.1 Data Integration Architecture
+### 3.1 Data Flow
 
 ```mermaid
 graph TD
