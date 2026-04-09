@@ -8,16 +8,21 @@
 
 - **Tujuan Project**: Membuat bot AI dalam permainna battleship
 - **Scope Project**:
-- Analisis dataset Battleship (Moves, Squares, Games)
-- Data preprocessing dan profiling
-- Penggabungan dataset
-- Transformasi data untuk kebutuhan analitik
-- Evaluasi performa AI 
+  - Analisis dataset Battleship (Moves, Squares, Games)
+  - Data preprocessing dan profiling
+  - Penggabungan dataset
+  - Transformasi data untuk kebutuhan analitik
+  - Evaluasi performa AI 
 - **Expected Outcomes**:
-- Dataset terintegrasi hasil merge
-- Insight performa AI (win rate, jumlah langkah, dll)
-- Struktur data yang siap digunakan untuk pengembangan AI
-- **Timeline**: -
+  - Dataset terintegrasi hasil merge
+  - Insight performa AI (win rate, jumlah langkah, dll)
+  - Struktur data yang siap digunakan untuk pengembangan AI
+- **Timeline**:
+  - Pengumpulan data: Minggu 1
+  - Analisis & preprocessing: Minggu 2
+  - Transformasi & integrasi: Minggu 3
+  - Evaluasi & dokumentasi: Minggu 4
+  
 
 ### 1.2 Stakeholders
 
@@ -53,20 +58,14 @@
 
 #### Data Analysis
 
-- **Format Data**: Parquet
-- **Size & Dimensions**: 2GB, 12 million rows
-- **Data Fields**:
-  - timestamp
-  - station_id
-  - passenger_count
-  - vehicle_type
-  - weather_condition
-- **Quality Metrics**:
-  - Missing Values: 2% (mainly in weather_condition)
-  - Data Types: Properly formatted
-  - Consistency: High
-  - Documentation Quality: Excellent, includes data dictionary
-
+- **Format Data**: CSV 
+- **Dataset**:
+  - battleship_game_moves.csv → 1008 baris, 6 kolom
+  - battleship_game_squares.csv → 2400 baris, 7 kolom
+  - battleship_games.csv → 59710 baris, 6 kolom
+- **Deskripsi**:
+  Dataset berisi log permainan Battleship dengan berbagai informasi seperti mode AI,      hasil permainan, jumlah langkah, dan posisi kapal.
+  
 ### 2.3 Public APIs
 
 #### Source Details
