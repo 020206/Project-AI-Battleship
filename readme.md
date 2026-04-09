@@ -148,89 +148,25 @@
  - Nilai boolean konsisten
  - Tipe data seragam (integer)
 
-## 3. Data Flow & Arsitektur
+## 8. Data Flow & Arsitektur
 
-### 3.1 Data Flow
+### 8.1 Data Flow
 
 ```mermaid
 graph TD
-    A[Data.go.id] --> D[Data Lake]
-    B[Kaggle Dataset] --> D
-    C[Weather API] --> D
+    A[Moves.Datset] --> D[ETL Process]
+    B[Squares Dataset] --> D
+    C[Games Dataset] --> D
     D --> E[Data Warehouse]
-    E --> F[Analytics Layer]
-    F --> G[Dashboard]
+    E --> F[Analytics]
+    F --> G[Insight AI Battleship]
 ```
 
-### 3.2 ETL Process Design
-
-- **Extraction Methods**:
-  - Data.go.id: Monthly batch download
-  - Kaggle: One-time bulk load
-  - Weather API: Real-time streaming
-- **Transformation Rules**:
-  - Standardize timestamps to UTC+7
-  - Geocode station locations
-  - Normalize weather conditions
-- **Loading Procedures**:
-  - Incremental loads for streaming data
-  - Full refresh for monthly batches
-- **Scheduling**:
-  - Weather data: Every 5 minutes
-  - Usage data: Daily at 00:00
-  - Statistics: Monthly at 1st
-
-%% System Architecture Diagram
-graph TD
-subgraph Data Sources
-A[Data.go.id] --> ETL
-B[Kaggle Dataset] --> ETL
-C[Weather API] --> ETL
-D[Research Data] --> ETL
-end
-
-subgraph Data Processing
-    ETL[ETL Layer]
-    DL[(Data Lake)]
-    DW[(Data Warehouse)]
-    ETL --> DL
-    DL --> DW
-end
-
-subgraph Analytics
-    AN[Analytics Engine]
-    DS[Data Science Models]
-    DW --> AN
-    DW --> DS
-end
-
-subgraph Applications
-    API[REST API]
-    DASH[Dashboard]
-    AN --> API
-    DS --> API
-    API --> DASH
-end
-%% ETL Workflow
-sequenceDiagram
-participant S as Source Systems
-participant E as Extraction
-participant T as Transformation
-participant L as Loading
-participant DW as Data Warehouse
-
-S->>E: Raw Data
-E->>T: Extracted Data
-T->>L: Transformed Data
-L->>DW: Loaded Data
----
+### 9. Kesimpulan
+ - Dataset Battleship memiliki kualitas data yang sangat baik (bersih & konsisten)
+ - Data dapat digunakan untuk analisis performa AI
+ - Transformasi data memungkinkan pembuatan insight yang lebih dalam
+ - Siap digunakan untuk pengembangan model AI Battleship
 
 
 
-**Kita ingin menganalisis hubungan antara tingkat pendidikan, pengangguran, dan pendapatan di suatu negara.**
-
-**Dataset:**
-
-* **World Bank Open Data:** Data tentang tingkat pendidikan ([https://data.worldbank.org/](https://www.google.com/url?sa=E&q=https%3A%2F%2Fdata.worldbank.org%2F))
-* **ILOSTAT:** Data tentang tingkat pengangguran ([https://ilostat.ilo.org/](https://www.google.com/url?sa=E&q=https%3A%2F%2Filostat.ilo.org%2F))
-* **Our World in Data:** Data tentang pendapatan per kapita ([https://ourworldindata.org/](https://www.google.com/url?sa=E&q=https%3A%2F%2Fourworldindata.org%2F))
